@@ -137,3 +137,34 @@ a.menu-icon {
   align-items: center;
   height: 100%;
 }
+img.img-food-menu {
+  width: 48px;
+  padding: 10px 0px 10px;
+}
+span.spn-img-caption{
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+label.lbl-header-caption {
+  width: 96px;
+  padding: 5px 5px;
+  background: #084298;
+  color: #fcfcfc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 2.4rem;
+  text-align: center;
+}
+table.table.tbl-custom th {
+  border-bottom-width: 0px;
+}
+table.table.tbl-custom tbody tr td {
+  vertical-align: middle;
+}
+span.spn-item-type {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+}
