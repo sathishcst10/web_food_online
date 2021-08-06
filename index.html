@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link 
+        rel="stylesheet" 
+        href="assets/css/bootstrap.css" 
+    />
+    <link 
+        rel="stylesheet" 
+        href="assets/css/defaultStyles.css" 
+    />
+
 </head>
-<body>
-    
+<body class="body-login">
+    <main class="form-signin">
+        <form action="frmLayout.html">
+            <img 
+                class="app-login-logo mb-4" 
+                src="assets/images/logo-login-2.png" 
+                alt="App Logo"
+            />
+            <h1 
+                class="h4 mb-3 fw-normal"
+            >
+                Welcome back!
+            </h1>
+      
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="username">
+            <label for="floatingInput">Username</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-sm btn-login" type="submit">Sign in</button>          
+        </form>
+      </main>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/defaultScripts.js"></script>
 </body>
 </html>

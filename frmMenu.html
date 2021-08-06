@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cafe - Online Food</title>
+    <link 
+        rel="stylesheet" 
+        href="assets/css/bootstrap.css" 
+    />
+    <link 
+        rel="stylesheet" 
+        href="assets/css/defaultStyles.css" 
+    />
+
+</head>
+<body>
+    <header class="p-1 border-bottom-0 shadow-sm fixed-top bg-white">
+        <div class="container-fluid">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="assets/images/logo-login-2.png" alt="App Logo" class="me-5" style="width: 96px;"/>
+            </a>
+    
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 active">HOME</a></li>
+              <li><a href="#" class="nav-link px-2">MENU</a></li>
+              <li><a href="#" class="nav-link px-2">BOOK</a></li>
+              <li><a href="#" class="nav-link px-2">ORDER</a></li>
+              <li><a href="frmEmployeesList.html" class="nav-link px-2">EMPLOYEE ACCESS</a></li>
+              <li><a href="#" class="nav-link px-2">MY PROFILE</a></li>
+            </ul>
+    
+          
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/profile.png" alt="Profile" width="32" height="32" class="rounded-circle me-1">
+                userName
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="p-0">
+       <!-- Main Content goes from here -->
+      
+      <div class="container-fluid">
+        <div class="row">
+            <nav class="home-nav-header mt-0 border-0">
+                <h2 class="display-6 fw-bold text-center">TASTY MENU TODAY</h2>
+                <div class="text-center mb-2">
+                    <span class="text-gray-50">FOR SELECTION</span>
+                </div>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button 
+                        class="nav-link home-tab-menu active" 
+                        id="nav-breakfast-tab" 
+                        data-bs-toggle="tab" 
+                        data-bs-target="#nav-breakfast" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="nav-breakfast" 
+                        aria-selected="true"
+                    >
+                        <img src="assets/images/fast-food.png" alt=""/>
+                        Breakfast
+                    </button>
+                    <button 
+                        class="nav-link home-tab-menu" 
+                        id="nav-lunch-tab" 
+                        data-bs-toggle="tab" 
+                        data-bs-target="#nav-lunch" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="nav-lunch" 
+                        aria-selected="false"
+                    >
+                    <img src="assets/images/dish.png" alt=""/>
+                        Lunch
+                    </button>
+                    <button 
+                        class="nav-link home-tab-menu" 
+                        id="nav-snacks-tab" 
+                        data-bs-toggle="tab" 
+                        data-bs-target="#nav-snacks" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="nav-snacks" 
+                        aria-selected="false"
+                    >
+                    <img src="assets/images/fast-food-snacks.png" alt=""/>
+                        Snacks
+                    </button>
+                    <button 
+                        class="nav-link home-tab-menu" 
+                        id="nav-dinner-tab" 
+                        data-bs-toggle="tab" 
+                        data-bs-target="#nav-dinner" 
+                        type="button" 
+                        role="tab" 
+                        aria-controls="nav-dinner" 
+                        aria-selected="false"
+                    >
+                    <img src="assets/images/ramen.png" alt=""/>
+                        Dinner
+                    </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div 
+                    class="tab-pane fade show active pt-2" 
+                    id="nav-breakfast" 
+                    role="tabpanel" 
+                    aria-labelledby="nav-breakfast-tab"
+                >                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div 
+                    class="tab-pane fade pt-2" 
+                    id="nav-lunch" 
+                    role="tabpanel" 
+                    aria-labelledby="nav-lunch-tab"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div 
+                    class="tab-pane fade pt-2" 
+                    id="nav-snacks" 
+                    role="tabpanel" 
+                    aria-labelledby="nav-snacks-tab"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div 
+                    class="tab-pane fade pt-2" 
+                    id="nav-dinner" 
+                    role="tabpanel" 
+                    aria-labelledby="nav-dinner-tab"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 text-center">
+                                        <img src="assets/images/dummy-image.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body h-100">
+                                                <div class="tab-list-body">                                                
+                                                    <h4 class="card-title fw-bold">B1</h4>
+                                                    <div class="text-center">
+                                                       <label class="fw-bold mb-2">List of items</label>
+                                                       <div>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                        <span>Items 1</span>
+                                                      
+                                                       </div>
+                                                    </div>
+                                                    <br/>
+                                                    <button class="btn btn-warning">
+                                                        ADD TO CART
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="text-center">
+            <h2>
+                Booking opening time
+            </h2>
+            <p>6:30AM to 8:30AM</p>
+            <p>11:30AM to 12:30PM</p>
+            <p>3:30PM to 4:30PM</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+      </footer>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/defaultScripts.js"></script>
+</body>
+</html>

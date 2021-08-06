@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cafe - Online Food</title>
+    <link 
+        rel="stylesheet" 
+        href="assets/css/bootstrap.css" 
+    />
+    <link 
+        rel="stylesheet" 
+        href="assets/css/defaultStyles.css" 
+    />
+
+</head>
+<body>
+    <header class="p-1 mb-3 border-bottom-0 shadow-sm fixed-top bg-white">
+        <div class="container-fluid">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="assets/images/logo-login-2.png" alt="App Logo" class="me-5" style="width: 96px;"/>
+            </a>
+    
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 active">HOME</a></li>
+              <li><a href="#" class="nav-link px-2">MENU</a></li>
+              <li><a href="#" class="nav-link px-2">BOOK</a></li>
+              <li><a href="#" class="nav-link px-2">ORDER</a></li>
+              <li><a href="frmEmployeesList.html" class="nav-link px-2">EMPLOYEE ACCESS</a></li>
+              <li><a href="#" class="nav-link px-2">MY PROFILE</a></li>
+            </ul>
+    
+          
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/profile.png" alt="Profile" width="32" height="32" class="rounded-circle me-1">
+                userName
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="container">
+       <!-- Main Content goes from here -->
+       <div class="row">
+           <div class="col-4"> 
+               <h4 class="mb-4">Add Employee</h4>         
+                <form >
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput1" class="form-label">Employee ID</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput1" 
+                            placeholder="Employee ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Employee Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput3" class="form-label">Email ID</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="Email ID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput4" class="form-label">Department</label>
+                        <select name="sltDepartment" id="" class="form-select">
+                            <option value="0">--Select--</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput5" class="form-label">Sector</label>
+                        <select name="sltSector" id="" class="form-select">
+                            <option value="0">--Select--</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput6" class="form-label">Designation</label>
+                        <select name="sltDesignation" id="" class="form-select">
+                            <option value="0">--Select--</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput7" class="form-label">Division</label>
+                        <select name="sltDivision" id="" class="form-select">
+                            <option value="0">--Select--</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput8" class="form-label">RFID Number</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput8" placeholder="RFID Number"/>
+                    </div>
+                    <div class="mb-3 text-end">
+                        <button class="btn btn-outline-danger">
+                            Cancel
+                        </button>
+                        <button class="btn btn-success">Create Employee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+      </footer>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/defaultScripts.js"></script>
+</body>
+</html>
