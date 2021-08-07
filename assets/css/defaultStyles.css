@@ -168,3 +168,41 @@ span.spn-item-type {
   font-weight: 700;
   display: block;
 }
+section.section-app{
+  padding: 96px;
+  background: #fec400;
+  text-align: center;
+}
+img.img-dashboard-count{
+  width: 96px;
+}
+span.spn-top-caption {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+label.lbl-today-count {
+  padding: 2px 20px;
+  background: #dc3545;
+  margin-top: 5px;
+  border-radius: 3px;
+  font-size: 1.50rem;
+  font-weight: 700;
+  color: #f7d0d0;
+}
+label.lbl-food-count {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+img.img-ficon {
+  width: 72px;
+  margin-right: 25px;
+}
+.div-info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.small-caption{
+  font-weight: 500;
+}
